@@ -33,6 +33,7 @@ levverh= Label(root,text="",font="Arial 19",fg="black",bg="white",height=2,width
 
 ept0= Label(root,text="",font="Arial 19",fg="black",bg="white",height=6,width=5,relief="ridge").grid(row=1,column=1,columnspan=1,sticky=N+S+W+E)
 ept6= Label(root,text="",font="Arial 19",fg="black",bg="white",height=6,width=5,relief="ridge").grid(row=1,column=7,columnspan=1,sticky=N+S+W+E)
+tpt5= Label(root,text="",font="Arial 19",fg="black",bg="white",height=6,width=5,relief="ridge").grid(row=3,column=6,columnspan=1,sticky=N+S+W+E)
 tpt0= Label(root,text="",font="Arial 19",fg="black",bg="white",height=6,width=5,relief="ridge").grid(row=3,column=1,columnspan=1,sticky=N+S+W+E)
 kpt0= Label(root,text="",font="Arial 19",fg="black",bg="white",height=6,width=5,relief="ridge").grid(row=5,column=1,columnspan=1,sticky=N+S+W+E)
 npt0= Label(root,text="",font="Arial 19",fg="black",bg="white",height=6,width=5,relief="ridge").grid(row=7,column=1,columnspan=1,sticky=N+S+W+E)
@@ -58,9 +59,18 @@ ept7 = Button(root,text="Operatsioonisüstee\nmide alused",font="Arial 9",fg="bl
 ept8 = Button(root,text="Tugiõpe\n(matema\natika)",font="Arial 9",fg="black",bg="#FCB9D1",height=5,width=5,relief="ridge").grid(row=1,column=10,columnspan=1,sticky=S+W+E+N)
 
 #teisipäev
-tpt1 = Button(root,text="Inglise Keel\n(programmeerimise\nalused)",font="Arial 9",fg="black",bg="#CBCBCB",height=5,width=5,relief="ridge").grid(row=3,column=2,columnspan=2,sticky=NW+NE)
+tpt1 = Button(root,text="Inglise keel\n(programmeerimise\nalused)",font="Arial 9",fg="black",bg="#CBCBCB",height=5,width=5,relief="ridge").grid(row=3,column=2,columnspan=2,sticky=NW+NE)
 tpt1 = Button(root,text="Inglise Keel",font="Arial 9",fg="black",bg="#E0ABFF",height=5,width=5,relief="ridge").grid(row=3,column=2,columnspan=2,sticky=SW+SE)
+tpt3 = Button(root,text="Füüsika",font="Arial 9",fg="black",bg="#FFFFD0",height=5,width=5,relief="ridge").grid(row=3,column=4,columnspan=2,sticky=S+W+E+N)
+tpt6 = Button(root,text="Eesti keel",font="Arial 9",fg="black",bg="#CCB3FF",height=5,width=5,relief="ridge").grid(row=3,column=7,columnspan=1,sticky=NW+NE)
+tpt7 = Button(root,text="Eesti keel",font="Arial 9",fg="black",bg="#CCB3FF",height=5,width=5,relief="ridge").grid(row=3,column=8,columnspan=1,sticky=NW+NE)
+tpt6 = Button(root,text="Inglise keel\n(programmeerimise\nalused)",font="Arial 9",fg="black",bg="#CBCBCB",height=5,width=5,relief="ridge").grid(row=3,column=7,columnspan=2,sticky=SW+SE)
+tpt8 = Button(root,text="Matemaatika",font="Arial 9",fg="black",bg="#FCB9D1",height=5,width=5,relief="ridge").grid(row=3,column=9,columnspan=1,sticky=S+W+E+N)
+tpt9 = Button(root,text="Tugiõpe\n(Keemia)",font="Arial 9",fg="black",bg="#E080E0",height=5,width=5,relief="ridge").grid(row=3,column=10,columnspan=1,sticky=S+W+E+N)
 
+#kolmapäev
+kpt1= Button(root,text="Programmeerimise alused",font="Arial 9",fg="black",bg="#ABE0FF",height=5,width=5,relief="ridge").grid(row=5,column=2,columnspan=3,sticky=NW+NE)
+kpt1 = Button(root,text="Eesti keel",font="Arial 9",fg="black",bg="#CAB4C7",height=5,width=5,relief="ridge").grid(row=5,column=2,columnspan=1,sticky=SW+SE)
 
 
 
