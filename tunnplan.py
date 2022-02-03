@@ -1,8 +1,8 @@
 from tkinter import *
-from tkinter.font import Font
+from tkinter.messagebox import *
 
 root=Tk()
-root.geometry("1100x900")
+root.geometry("1100x940")
 root.title("Tunniplaan")
 root.configure(bg="white")
 
@@ -36,7 +36,9 @@ ept6= Label(root,text="",font="Arial 19",fg="black",bg="white",height=6,width=5,
 tpt5= Label(root,text="",font="Arial 19",fg="black",bg="white",height=6,width=5,relief="ridge").grid(row=3,column=6,columnspan=1,sticky=N+S+W+E)
 tpt0= Label(root,text="",font="Arial 19",fg="black",bg="white",height=6,width=5,relief="ridge").grid(row=3,column=1,columnspan=1,sticky=N+S+W+E)
 kpt0= Label(root,text="",font="Arial 19",fg="black",bg="white",height=6,width=5,relief="ridge").grid(row=5,column=1,columnspan=1,sticky=N+S+W+E)
+kpt4= Label(root,text="",font="Arial 19",fg="black",bg="white",height=6,width=5,relief="ridge").grid(row=5,column=5,columnspan=1,sticky=N+S+W+E)
 npt0= Label(root,text="",font="Arial 19",fg="black",bg="white",height=6,width=5,relief="ridge").grid(row=7,column=1,columnspan=1,sticky=N+S+W+E)
+npt4= Label(root,text="",font="Arial 19",fg="black",bg="white",height=6,width=5,relief="ridge").grid(row=7,column=7,columnspan=1,sticky=N+S+W+E)
 rpt0= Label(root,text="",font="Arial 19",fg="black",bg="white",height=6,width=5,relief="ridge").grid(row=9,column=1,columnspan=1,sticky=N+S+W+E)
 
 ept10= Label(root,text="",font="Arial 19",fg="black",bg="white",height=6,width=5,relief="ridge").grid(row=1,column=11,columnspan=1,sticky=N+S+W+E)
@@ -44,6 +46,10 @@ tpt10= Label(root,text="",font="Arial 19",fg="black",bg="white",height=6,width=5
 kpt10= Label(root,text="",font="Arial 19",fg="black",bg="white",height=6,width=5,relief="ridge").grid(row=5,column=11,columnspan=1,sticky=N+S+W+E)
 npt10= Button(root,text="Rühmaju\nhataja\ntund",font="Arial 9",fg="black",bg="#ABE0FF",height=6,width=5,relief="ridge").grid(row=7,column=11,columnspan=1,sticky=N+S+W+E)
 rpt10= Label(root,text="",font="Arial 19",fg="black",bg="white",height=6,width=5,relief="ridge").grid(row=9,column=11,columnspan=1,sticky=N+S+W+E)
+rpt2= Label(root,text="",font="Arial 19",fg="black",bg="white",height=6,width=5,relief="ridge").grid(row=9,column=2,columnspan=1,sticky=N+S+W+E)
+rpt3= Label(root,text="",font="Arial 19",fg="black",bg="white",height=6,width=5,relief="ridge").grid(row=9,column=3,columnspan=1,sticky=N+S+W+E)
+rpt4= Label(root,text="",font="Arial 19",fg="black",bg="white",height=6,width=5,relief="ridge").grid(row=9,column=4,columnspan=1,sticky=N+S+W+E)
+rpt9= Label(root,text="",font="Arial 19",fg="black",bg="white",height=6,width=5,relief="ridge").grid(row=9,column=10,columnspan=1,sticky=N+S+W+E)
 
 
 
@@ -70,19 +76,88 @@ tpt9 = Button(root,text="Tugiõpe\n(Keemia)",font="Arial 9",fg="black",bg="#E080
 
 #kolmapäev
 kpt1= Button(root,text="Programmeerimise alused",font="Arial 9",fg="black",bg="#ABE0FF",height=5,width=5,relief="ridge").grid(row=5,column=2,columnspan=3,sticky=NW+NE)
-kpt1 = Button(root,text="Eesti keel",font="Arial 9",fg="black",bg="#CAB4C7",height=5,width=5,relief="ridge").grid(row=5,column=2,columnspan=1,sticky=SW+SE)
+kpt2 = Button(root,text="Tugiõpe\nEesti keel\nkui\nteine keel",font="Arial 9",fg="black",bg="#CAB4C7",height=5,width=5,relief="ridge").grid(row=5,column=2,columnspan=1,sticky=SW+SE)
+kpt3 = Button(root,text="Eesti keel",font="Arial 9",fg="black",bg="#CAB4C7",height=5,width=5,relief="ridge").grid(row=5,column=3,columnspan=1,sticky=SW+SE)
+kpt4 = Button(root,text="Eesti keel",font="Arial 9",fg="black",bg="#CAB4C7",height=5,width=5,relief="ridge").grid(row=5,column=4,columnspan=1,sticky=SW+SE)
+kpt6 = Button(root,text="Multimeedia",font="Arial 9",fg="black",bg="#ABC0FF",height=5,width=5,relief="ridge").grid(row=5,column=6,columnspan=3,sticky=NW+NE)
+kp62= Button(root,text="Programmeerimise alused",font="Arial 9",fg="black",bg="#ABE0FF",height=5,width=5,relief="ridge").grid(row=5,column=6,columnspan=3,sticky=SW+SE)
+kpt8 = Button(root,text="Kehaline kasvatus",font="Arial 9",fg="black",bg="#E080C0",height=5,width=5,relief="ridge").grid(row=5,column=9,columnspan=2,sticky=S+W+E+N)
+
+#neljapäev
+npt1 = Button(root,text="Tugiõpe\nEesti keel\nkui\nteine keel",font="Arial 9",fg="black",bg="#CCB3FF",height=5,width=5,relief="ridge").grid(row=7,column=2,columnspan=1,sticky=SW+SE)
+npt2 = Button(root,text="Ajalugu,\ninimgeogr\naafia ja\ninimese\nõpetus\neesti\nkeeles",font="Arial 9",fg="black",bg="#FFE6B3",height=5,width=5,relief="ridge").grid(row=7,column=3,columnspan=1,sticky=S+W+E+N)
+npt3 = Button(root,text="Ajalugu,\ninimgeogr\naafia ja\ninimese\nõpetus\neesti\nkeeles",font="Arial 9",fg="black",bg="#FFE6B3",height=5,width=5,relief="ridge").grid(row=7,column=4,columnspan=1,sticky=S+W+E+N)
+npt4 = Button(root,text="Füüsika(arvuti ja\ntaristu osad)",font="Arial 9",fg="black",bg="#FCB9D1",height=5,width=5,relief="ridge").grid(row=7,column=5,columnspan=2,sticky=S+W+E+N)
+npt7= Button(root,text="Programmeerimise alused",font="Arial 9",fg="black",bg="#ABE0FF",height=5,width=5,relief="ridge").grid(row=7,column=8,columnspan=3,sticky=NW+NE)
+npt72 = Button(root,text="Multimeedia",font="Arial 9",fg="black",bg="#ABC0FF",height=5,width=5,relief="ridge").grid(row=7,column=8,columnspan=3,sticky=SW+SE)
 
 
+#reede
+rpt4 = Button(root,text="Keel ja kirjandus",font="Arial 9",fg="black",bg="#94ED80",height=5,width=5,relief="ridge").grid(row=9,column=5,columnspan=2,sticky=S+W+E+N)
+rpt6 = Button(root,text="Kunstiained",font="Arial 9",fg="black",bg="#E080CE",height=5,width=5,relief="ridge").grid(row=9,column=7,columnspan=2,sticky=S+W+E+N)
+rpt8 = Button(root,text="Matemaatika",font="Arial 9",fg="black",bg="#FCB9D1",height=5,width=5,relief="ridge").grid(row=9,column=9,columnspan=1,sticky=S+W+E+N)
 
 
+def failist_sõnastikusse():
+    tund_kirjeldus = {}
+    file = open("Tunnid.txt","r")
+    for line in file:
+        tund,kirjeldus = line.strip().split(":")
+        tund_kirjeldus[tund.strip()] = kirjeldus.strip()
+    file.close()
+    return tund_kirjeldus
 
+tund_kirjeldus = failist_sõnastikusse()
 
+def kirjeldus_aknasse(t:str):
+    if(askyesno("Küsimus","Kas tahad kirjeldust näha?")):
+        alam_root = Toplevel()
+        alam_root.title()
+        lbl_kirjeldus = Label(alam_root, text = tund_kirjeldus[t]).pack()
+        c = Canvas(alam_root,height = 1000, width = 1000)
+        file = PhotoImage(file = "gif1.gif")
+        c.create_image(10,10,image = file,anchor = NW)
+        c.pack()
+        alam_root.mainloop()
+    else:
+        showinfo("Vastus","Kui ei taha, siis ei taha!")
 
+lbl = Label(root, text = "", borderwidth = 2, relief = "ridge").grid(row = 0, column = 0, sticky = N+S+W+E)
 
+p = ["Esmaspäev","Teisipäev","Kolmapäev","Neljapäev","Reede"]
+j = 0
+for i in range(1,10,2):
+    Days = Label(root, height = 5, width = 15, text = p[j], relief = "ridge").grid(row = i, column = 0, rowspan = 2, sticky = N+S+W+E)
+    j+=1
 
-
+kell = ["7:40-8:25","8:30-9:15","9:20-10:05","10:10-10:55","11:00-11:45","11:50-12:35","12:40-13:25","13:30-14:15","14:20-15:05","15:10-15:55","16:00-16:45"]
+for i in range(11):
+    tunnid = Label(root, height = 4, width = 9, text = str(i)+"\n"+kell[i], relief = "ridge").grid(row = 0, column = i+1, sticky = N+S+W+E)
 
 
 
 
 root.mainloop()
+Multimeedia: Pant Gert, A218
+Programmeerimise alused: Oleinik Marina, E07
+Rühma juhataja tund: Oleinik Marina, E07
+Inglise keel1: Grupp 1, Poskotinova Olga, B138
+Inglise keel2: Grupp 2, Žetjakova Ellina, B148
+Operatsiooni süsteemide alused: Skharbanova Lury, A243
+Kehaline kasvatus: Maksõmiv Maksim, Võimla A
+Eesti keel1: Grupp 1, Peetrimägi Irina, B226
+Eesti keel2: Grupp 2, Ojamäe Olesja, B234
+Ajalugu, inimgeograafia ja inimeseõpetus eesti keeles: Speek Mari, B239
+Kunstiained: Norkevitð Aleksandra, B232
+Keel ja kirjandus: Mihhailova Ljudmilla, B221
+Matemaatika: Voronova Nadežda, B133
+Tugiõpe (matemaatika): Voronova Nadežda, B133
+Keemia: Pesetskaja Svetlana, B144
+Tugiõpe Eesti keel kui teine keel1: Grupp 1, Peetrimägi Irina, B226
+Tugiõpe Eesti keel kui teine keel2: Grupp 2, Ojamäe Olesja, B234
+Inglise keel(programmeerimise alused): Grupp 1, Voronetskaja Julia A241
+
+
+
+
+
