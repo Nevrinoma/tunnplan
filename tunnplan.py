@@ -110,12 +110,12 @@ def failist_sõnastikusse():
 tund_kirjeldus = failist_sõnastikusse()
 
 def kirjeldus_aknasse(t:str):
-    if(askyesno("Küsimus","Kas tahad kirjeldust näha?")):
+    if(askyesno("Вопрос","Открыть расписание?")):
         alam_root = Toplevel()
         alam_root.title()
-        lbl_kirjeldus = Label(alam_root, text = tund_kirjeldus[t]).pack()
+         = Label(alam_root, text = tund_kirjeldus[t]).pack()
         c = Canvas(alam_root,height = 1000, width = 1000)
-        file = PhotoImage(file = "gif1.gif")
+        file = PhotoImage(file = "")
         c.create_image(10,10,image = file,anchor = NW)
         c.pack()
         alam_root.mainloop()
@@ -138,24 +138,7 @@ for i in range(11):
 
 
 root.mainloop()
-Multimeedia: Pant Gert, A218
-Programmeerimise alused: Oleinik Marina, E07
-Rühma juhataja tund: Oleinik Marina, E07
-Inglise keel1: Grupp 1, Poskotinova Olga, B138
-Inglise keel2: Grupp 2, Žetjakova Ellina, B148
-Operatsiooni süsteemide alused: Skharbanova Lury, A243
-Kehaline kasvatus: Maksõmiv Maksim, Võimla A
-Eesti keel1: Grupp 1, Peetrimägi Irina, B226
-Eesti keel2: Grupp 2, Ojamäe Olesja, B234
-Ajalugu, inimgeograafia ja inimeseõpetus eesti keeles: Speek Mari, B239
-Kunstiained: Norkevitð Aleksandra, B232
-Keel ja kirjandus: Mihhailova Ljudmilla, B221
-Matemaatika: Voronova Nadežda, B133
-Tugiõpe (matemaatika): Voronova Nadežda, B133
-Keemia: Pesetskaja Svetlana, B144
-Tugiõpe Eesti keel kui teine keel1: Grupp 1, Peetrimägi Irina, B226
-Tugiõpe Eesti keel kui teine keel2: Grupp 2, Ojamäe Olesja, B234
-Inglise keel(programmeerimise alused): Grupp 1, Voronetskaja Julia A241
+
 
 
 
