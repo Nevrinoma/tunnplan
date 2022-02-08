@@ -23,6 +23,27 @@
   <ItemGroup>
     <Compile Include="tunnplan.py" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="ajalugu.png" />
+    <Content Include="eestikeel.png" />
+    <Content Include="english.png" />
+    <Content Include="english2.png" />
+    <Content Include="engprog.png" />
+    <Content Include="estikeel2.png" />
+    <Content Include="esttug1.png" />
+    <Content Include="esttug2.png" />
+    <Content Include="fizra.png" />
+    <Content Include="fusika2.png" />
+    <Content Include="keemia.png" />
+    <Content Include="kirjeldus.png" />
+    <Content Include="klastund.png" />
+    <Content Include="kunst.png" />
+    <Content Include="matem.png" />
+    <Content Include="mattug.png" />
+    <Content Include="multmed.png" />
+    <Content Include="prog.png" />
+    <Content Include="systemid.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
        Visual Studio and specify your pre- and post-build commands in

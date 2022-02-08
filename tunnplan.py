@@ -44,7 +44,7 @@ rpt0= Label(root,text="",font="Arial 19",fg="black",bg="white",height=6,width=5,
 ept10= Label(root,text="",font="Arial 19",fg="black",bg="white",height=6,width=5,relief="ridge").grid(row=1,column=11,columnspan=1,sticky=N+S+W+E)
 tpt10= Label(root,text="",font="Arial 19",fg="black",bg="white",height=6,width=5,relief="ridge").grid(row=3,column=11,columnspan=1,sticky=N+S+W+E)
 kpt10= Label(root,text="",font="Arial 19",fg="black",bg="white",height=6,width=5,relief="ridge").grid(row=5,column=11,columnspan=1,sticky=N+S+W+E)
-npt10= Button(root,text="Rühmaju\nhataja\ntund",font="Arial 9",fg="black",bg="#ABE0FF",height=6,width=5,relief="ridge").grid(row=7,column=11,columnspan=1,sticky=N+S+W+E)
+npt10= Button(root,text="Rühmaju\nhataja\ntund",font="Arial 9",fg="black",bg="#ABE0FF",height=6,width=5,relief="ridge",command=lambda:kirjeldus_aknasse("klastund.png")).grid(row=7,column=11,columnspan=1,sticky=N+S+W+E)
 rpt10= Label(root,text="",font="Arial 19",fg="black",bg="white",height=6,width=5,relief="ridge").grid(row=9,column=11,columnspan=1,sticky=N+S+W+E)
 rpt2= Label(root,text="",font="Arial 19",fg="black",bg="white",height=6,width=5,relief="ridge").grid(row=9,column=2,columnspan=1,sticky=N+S+W+E)
 rpt3= Label(root,text="",font="Arial 19",fg="black",bg="white",height=6,width=5,relief="ridge").grid(row=9,column=3,columnspan=1,sticky=N+S+W+E)
@@ -56,46 +56,46 @@ rpt9= Label(root,text="",font="Arial 19",fg="black",bg="white",height=6,width=5,
 
 
 #esmaspäev
-ept1= Button(root,text="Programmeerimise alused",font="Arial 9",fg="black",bg="#ABE0FF",height=5,width=5,relief="ridge").grid(row=1,column=2,columnspan=3,sticky=SW+SE)
+ept1= Button(root,text="Programmeerimise alused",font="Arial 9",fg="black",bg="#ABE0FF",height=5,width=5,relief="ridge",command=lambda:kirjeldus_aknasse("prog.png")).grid(row=1,column=2,columnspan=3,sticky=SW+SE)
 #ept11= Label(root,text="",font="Arial 9",fg="black",bg="white",height=5,width=5,relief="ridge").grid(row=1,column=2,columnspan=1,sticky=NW+NE)
-ept2 = Button(root,text="Multimeedia",font="Arial 9",fg="black",bg="#ABC0FF",height=5,width=5,relief="ridge").grid(row=1,column=3,columnspan=2,sticky=NW+NE)
-ept4 = Button(root,text="Inglise Keel",font="Arial 9",fg="black",bg="#FFFFF0",height=5,width=5,relief="ridge").grid(row=1,column=5,columnspan=2,sticky=NW+NE)
-ept42 = Button(root,text="Multimeedia",font="Arial 9",fg="black",bg="#ABC0FF",height=5,width=5,relief="ridge").grid(row=1,column=5,columnspan=2,sticky=SW+SE)
-ept7 = Button(root,text="Operatsioonisüstee\nmide alused",font="Arial 9",fg="black",bg="#E080FF",height=5,width=5,relief="ridge").grid(row=1,column=8,columnspan=2,sticky=S+W+E+N)
-ept8 = Button(root,text="Tugiõpe\n(matema\natika)",font="Arial 9",fg="black",bg="#FCB9D1",height=5,width=5,relief="ridge").grid(row=1,column=10,columnspan=1,sticky=S+W+E+N)
+ept2 = Button(root,text="Multimeedia",font="Arial 9",fg="black",bg="#ABC0FF",height=5,width=5,relief="ridge",command=lambda:kirjeldus_aknasse("multmed.png")).grid(row=1,column=3,columnspan=2,sticky=NW+NE)
+ept4 = Button(root,text="Inglise Keel",font="Arial 9",fg="black",bg="#FFFFF0",height=5,width=5,relief="ridge",command=lambda:kirjeldus_aknasse("english.png")).grid(row=1,column=5,columnspan=2,sticky=NW+NE)
+ept42 = Button(root,text="Multimeedia",font="Arial 9",fg="black",bg="#ABC0FF",height=5,width=5,relief="ridge",command=lambda:kirjeldus_aknasse("multmed.png")).grid(row=1,column=5,columnspan=2,sticky=SW+SE)
+ept7 = Button(root,text="Operatsioonisüstee\nmide alused",font="Arial 9",fg="black",bg="#E080FF",height=5,width=5,relief="ridge",command=lambda:kirjeldus_aknasse("systemid.png")).grid(row=1,column=8,columnspan=2,sticky=S+W+E+N)
+ept8 = Button(root,text="Tugiõpe\n(matema\natika)",font="Arial 9",fg="black",bg="#FCB9D1",height=5,width=5,relief="ridge",command=lambda:kirjeldus_aknasse("mattug.png")).grid(row=1,column=10,columnspan=1,sticky=S+W+E+N)
 
 #teisipäev
-tpt1 = Button(root,text="Inglise keel\n(programmeerimise\nalused)",font="Arial 9",fg="black",bg="#CBCBCB",height=5,width=5,relief="ridge").grid(row=3,column=2,columnspan=2,sticky=NW+NE)
-tpt1 = Button(root,text="Inglise Keel",font="Arial 9",fg="black",bg="#E0ABFF",height=5,width=5,relief="ridge").grid(row=3,column=2,columnspan=2,sticky=SW+SE)
-tpt3 = Button(root,text="Füüsika",font="Arial 9",fg="black",bg="#FFFFD0",height=5,width=5,relief="ridge").grid(row=3,column=4,columnspan=2,sticky=S+W+E+N)
-tpt6 = Button(root,text="Eesti keel",font="Arial 9",fg="black",bg="#CCB3FF",height=5,width=5,relief="ridge").grid(row=3,column=7,columnspan=1,sticky=NW+NE)
-tpt7 = Button(root,text="Eesti keel",font="Arial 9",fg="black",bg="#CCB3FF",height=5,width=5,relief="ridge").grid(row=3,column=8,columnspan=1,sticky=NW+NE)
-tpt6 = Button(root,text="Inglise keel\n(programmeerimise\nalused)",font="Arial 9",fg="black",bg="#CBCBCB",height=5,width=5,relief="ridge").grid(row=3,column=7,columnspan=2,sticky=SW+SE)
-tpt8 = Button(root,text="Matemaatika",font="Arial 9",fg="black",bg="#FCB9D1",height=5,width=5,relief="ridge").grid(row=3,column=9,columnspan=1,sticky=S+W+E+N)
-tpt9 = Button(root,text="Tugiõpe\n(Keemia)",font="Arial 9",fg="black",bg="#E080E0",height=5,width=5,relief="ridge").grid(row=3,column=10,columnspan=1,sticky=S+W+E+N)
+tpt1 = Button(root,text="Inglise keel\n(programmeerimise\nalused)",font="Arial 9",fg="black",bg="#CBCBCB",height=5,width=5,relief="ridge",command=lambda:kirjeldus_aknasse("engprog.png")).grid(row=3,column=2,columnspan=2,sticky=NW+NE)
+tpt1 = Button(root,text="Inglise Keel",font="Arial 9",fg="black",bg="#E0ABFF",height=5,width=5,relief="ridge",command=lambda:kirjeldus_aknasse("english2.png")).grid(row=3,column=2,columnspan=2,sticky=SW+SE)
+tpt3 = Button(root,text="Füüsika",font="Arial 9",fg="black",bg="#FFFFD0",height=5,width=5,relief="ridge",command=lambda:kirjeldus_aknasse("fusika2.png")).grid(row=3,column=4,columnspan=2,sticky=S+W+E+N)
+tpt6 = Button(root,text="Eesti keel",font="Arial 9",fg="black",bg="#CCB3FF",height=5,width=5,relief="ridge",command=lambda:kirjeldus_aknasse("eestikeel.png")).grid(row=3,column=7,columnspan=1,sticky=NW+NE)
+tpt7 = Button(root,text="Eesti keel",font="Arial 9",fg="black",bg="#CCB3FF",height=5,width=5,relief="ridge",command=lambda:kirjeldus_aknasse("eestikeel.png")).grid(row=3,column=8,columnspan=1,sticky=NW+NE)
+tpt6 = Button(root,text="Inglise keel\n(programmeerimise\nalused)",font="Arial 9",fg="black",bg="#CBCBCB",height=5,width=5,relief="ridge",command=lambda:kirjeldus_aknasse("engprog.png")).grid(row=3,column=7,columnspan=2,sticky=SW+SE)
+tpt8 = Button(root,text="Matemaatika",font="Arial 9",fg="black",bg="#FCB9D1",height=5,width=5,relief="ridge",command=lambda:kirjeldus_aknasse("matem.png")).grid(row=3,column=9,columnspan=1,sticky=S+W+E+N)
+tpt9 = Button(root,text="Tugiõpe\n(Keemia)",font="Arial 9",fg="black",bg="#E080E0",height=5,width=5,relief="ridge",command=lambda:kirjeldus_aknasse("keemia.png")).grid(row=3,column=10,columnspan=1,sticky=S+W+E+N)
 
 #kolmapäev
-kpt1= Button(root,text="Programmeerimise alused",font="Arial 9",fg="black",bg="#ABE0FF",height=5,width=5,relief="ridge").grid(row=5,column=2,columnspan=3,sticky=NW+NE)
-kpt2 = Button(root,text="Tugiõpe\nEesti keel\nkui\nteine keel",font="Arial 9",fg="black",bg="#CAB4C7",height=5,width=5,relief="ridge").grid(row=5,column=2,columnspan=1,sticky=SW+SE)
-kpt3 = Button(root,text="Eesti keel",font="Arial 9",fg="black",bg="#CAB4C7",height=5,width=5,relief="ridge").grid(row=5,column=3,columnspan=1,sticky=SW+SE)
-kpt4 = Button(root,text="Eesti keel",font="Arial 9",fg="black",bg="#CAB4C7",height=5,width=5,relief="ridge").grid(row=5,column=4,columnspan=1,sticky=SW+SE)
-kpt6 = Button(root,text="Multimeedia",font="Arial 9",fg="black",bg="#ABC0FF",height=5,width=5,relief="ridge").grid(row=5,column=6,columnspan=3,sticky=NW+NE)
-kp62= Button(root,text="Programmeerimise alused",font="Arial 9",fg="black",bg="#ABE0FF",height=5,width=5,relief="ridge").grid(row=5,column=6,columnspan=3,sticky=SW+SE)
-kpt8 = Button(root,text="Kehaline kasvatus",font="Arial 9",fg="black",bg="#E080C0",height=5,width=5,relief="ridge").grid(row=5,column=9,columnspan=2,sticky=S+W+E+N)
+kpt1= Button(root,text="Programmeerimise alused",font="Arial 9",fg="black",bg="#ABE0FF",height=5,width=5,relief="ridge",command=lambda:kirjeldus_aknasse("prog.png")).grid(row=5,column=2,columnspan=3,sticky=NW+NE)
+kpt2 = Button(root,text="Tugiõpe\nEesti keel\nkui\nteine keel",font="Arial 9",fg="black",bg="#CAB4C7",height=5,width=5,relief="ridge",command=lambda:kirjeldus_aknasse("esttug1.png")).grid(row=5,column=2,columnspan=1,sticky=SW+SE)
+kpt3 = Button(root,text="Eesti keel",font="Arial 9",fg="black",bg="#CAB4C7",height=5,width=5,relief="ridge",command=lambda:kirjeldus_aknasse("estikeel2.png")).grid(row=5,column=3,columnspan=1,sticky=SW+SE)
+kpt4 = Button(root,text="Eesti keel",font="Arial 9",fg="black",bg="#CAB4C7",height=5,width=5,relief="ridge",command=lambda:kirjeldus_aknasse("estikeel2.png")).grid(row=5,column=4,columnspan=1,sticky=SW+SE)
+kpt6 = Button(root,text="Multimeedia",font="Arial 9",fg="black",bg="#ABC0FF",height=5,width=5,relief="ridge",command=lambda:kirjeldus_aknasse("multmed.png")).grid(row=5,column=6,columnspan=3,sticky=NW+NE)
+kp62= Button(root,text="Programmeerimise alused",font="Arial 9",fg="black",bg="#ABE0FF",height=5,width=5,relief="ridge",command=lambda:kirjeldus_aknasse("prog.png")).grid(row=5,column=6,columnspan=3,sticky=SW+SE)
+kpt8 = Button(root,text="Kehaline kasvatus",font="Arial 9",fg="black",bg="#E080C0",height=5,width=5,relief="ridge",command=lambda:kirjeldus_aknasse("fizra.png")).grid(row=5,column=9,columnspan=2,sticky=S+W+E+N)
 
 #neljapäev
-npt1 = Button(root,text="Tugiõpe\nEesti keel\nkui\nteine keel",font="Arial 9",fg="black",bg="#CCB3FF",height=5,width=5,relief="ridge").grid(row=7,column=2,columnspan=1,sticky=SW+SE)
-npt2 = Button(root,text="Ajalugu,\ninimgeogr\naafia ja\ninimese\nõpetus\neesti\nkeeles",font="Arial 9",fg="black",bg="#FFE6B3",height=5,width=5,relief="ridge").grid(row=7,column=3,columnspan=1,sticky=S+W+E+N)
-npt3 = Button(root,text="Ajalugu,\ninimgeogr\naafia ja\ninimese\nõpetus\neesti\nkeeles",font="Arial 9",fg="black",bg="#FFE6B3",height=5,width=5,relief="ridge").grid(row=7,column=4,columnspan=1,sticky=S+W+E+N)
-npt4 = Button(root,text="Füüsika(arvuti ja\ntaristu osad)",font="Arial 9",fg="black",bg="#FCB9D1",height=5,width=5,relief="ridge").grid(row=7,column=5,columnspan=2,sticky=S+W+E+N)
-npt7= Button(root,text="Programmeerimise alused",font="Arial 9",fg="black",bg="#ABE0FF",height=5,width=5,relief="ridge").grid(row=7,column=8,columnspan=3,sticky=NW+NE)
-npt72 = Button(root,text="Multimeedia",font="Arial 9",fg="black",bg="#ABC0FF",height=5,width=5,relief="ridge").grid(row=7,column=8,columnspan=3,sticky=SW+SE)
+npt1 = Button(root,text="Tugiõpe\nEesti keel\nkui\nteine keel",font="Arial 9",fg="black",bg="#CCB3FF",height=5,width=5,relief="ridge",command=lambda:kirjeldus_aknasse("esttug2.png")).grid(row=7,column=2,columnspan=1,sticky=SW+SE)
+npt2 = Button(root,text="Ajalugu,\ninimgeogr\naafia ja\ninimese\nõpetus\neesti\nkeeles",font="Arial 9",fg="black",bg="#FFE6B3",height=5,width=5,relief="ridge",command=lambda:kirjeldus_aknasse("ajalugu.png")).grid(row=7,column=3,columnspan=1,sticky=S+W+E+N)
+npt3 = Button(root,text="Ajalugu,\ninimgeogr\naafia ja\ninimese\nõpetus\neesti\nkeeles",font="Arial 9",fg="black",bg="#FFE6B3",height=5,width=5,relief="ridge",command=lambda:kirjeldus_aknasse("ajalugu.png")).grid(row=7,column=4,columnspan=1,sticky=S+W+E+N)
+npt4 = Button(root,text="Füüsika(arvuti ja\ntaristu osad)",font="Arial 9",fg="black",bg="#FCB9D1",height=5,width=5,relief="ridge",command=lambda:kirjeldus_aknasse("fusika2.png")).grid(row=7,column=5,columnspan=2,sticky=S+W+E+N)
+npt7= Button(root,text="Programmeerimise alused",font="Arial 9",fg="black",bg="#ABE0FF",height=5,width=5,relief="ridge",command=lambda:kirjeldus_aknasse("prog.png")).grid(row=7,column=8,columnspan=3,sticky=NW+NE)
+npt72 = Button(root,text="Multimeedia",font="Arial 9",fg="black",bg="#ABC0FF",height=5,width=5,relief="ridge",command=lambda:kirjeldus_aknasse("multmed.png")).grid(row=7,column=8,columnspan=3,sticky=SW+SE)
 
 
 #reede
-rpt4 = Button(root,text="Keel ja kirjandus",font="Arial 9",fg="black",bg="#94ED80",height=5,width=5,relief="ridge").grid(row=9,column=5,columnspan=2,sticky=S+W+E+N)
-rpt6 = Button(root,text="Kunstiained",font="Arial 9",fg="black",bg="#E080CE",height=5,width=5,relief="ridge").grid(row=9,column=7,columnspan=2,sticky=S+W+E+N)
-rpt8 = Button(root,text="Matemaatika",font="Arial 9",fg="black",bg="#FCB9D1",height=5,width=5,relief="ridge").grid(row=9,column=9,columnspan=1,sticky=S+W+E+N)
+rpt4 = Button(root,text="Keel ja kirjandus",font="Arial 9",fg="black",bg="#94ED80",height=5,width=5,relief="ridge",command=lambda:kirjeldus_aknasse("kirjeldus.png")).grid(row=9,column=5,columnspan=2,sticky=S+W+E+N)
+rpt6 = Button(root,text="Kunstiained",font="Arial 9",fg="black",bg="#E080CE",height=5,width=5,relief="ridge",command=lambda:kirjeldus_aknasse("kunst.png")).grid(row=9,column=7,columnspan=2,sticky=S+W+E+N)
+rpt8 = Button(root,text="Matemaatika",font="Arial 9",fg="black",bg="#FCB9D1",height=5,width=5,relief="ridge",command=lambda:kirjeldus_aknasse("matem.png")).grid(row=9,column=9,columnspan=1,sticky=S+W+E+N)
 
 
 def failist_sõnastikusse():
@@ -113,14 +113,14 @@ def kirjeldus_aknasse(t:str):
     if(askyesno("Вопрос","Открыть расписание?")):
         alam_root = Toplevel()
         alam_root.title()
-         = Label(alam_root, text = tund_kirjeldus[t]).pack()
-        c = Canvas(alam_root,height = 1000, width = 1000)
-        file = PhotoImage(file = "")
+        imagetun = Label(alam_root, text = tund_kirjeldus[t]).pack()
+        c = Canvas(alam_root,height = 600, width = 800)
+        file = PhotoImage(file = t)
         c.create_image(10,10,image = file,anchor = NW)
         c.pack()
         alam_root.mainloop()
     else:
-        showinfo("Vastus","Kui ei taha, siis ei taha!")
+        showinfo("Ответ","Хорошо, я вас понял -_-...")
 
 lbl = Label(root, text = "", borderwidth = 2, relief = "ridge").grid(row = 0, column = 0, sticky = N+S+W+E)
 

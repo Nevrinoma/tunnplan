@@ -1,18 +1,19 @@
-Multimeedia: Pant Gert, A218
-Programmeerimise alused: Oleinik Marina, E07
-Rühma juhataja tund: Oleinik Marina, E07
-Inglise keel1: Grupp 1, Poskotinova Olga, B138
-Inglise keel2: Grupp 2, Žetjakova Ellina, B148
-Operatsiooni süsteemide alused: Skharbanova Lury, A243
-Kehaline kasvatus: Maksõmiv Maksim, Võimla A
-Eesti keel1: Grupp 1, Peetrimägi Irina, B226
-Eesti keel2: Grupp 2, Ojamäe Olesja, B234
-Ajalugu, inimgeograafia ja inimeseõpetus eesti keeles: Speek Mari, B239
-Kunstiained: Norkevitð Aleksandra, B232
-Keel ja kirjandus: Mihhailova Ljudmilla, B221
-Matemaatika: Voronova Nadežda, B133
-Tugiõpe (matemaatika): Voronova Nadežda, B133
-Keemia: Pesetskaja Svetlana, B144
-Tugiõpe Eesti keel kui teine keel1: Grupp 1, Peetrimägi Irina, B226
-Tugiõpe Eesti keel kui teine keel2: Grupp 2, Ojamäe Olesja, B234
-Inglise keel(programmeerimise alused): Grupp 1, Voronetskaja Julia A241
+multmed.png: Pant Gert, A218
+prog.png: Oleinik Marina, E07
+klastund.png: Oleinik Marina, E07
+english2.png: Grupp 1, Poskotinova Olga, B138
+english.png: Grupp 2, Žetjakova Ellina, B148
+systemid.png: Skharbanova Lury, A243
+fizra.png: Maksõmiv Maksim, Võimla A
+eestikeel.png: Grupp 1, Peetrimägi Irina, B226
+estikeel2.png: Grupp 2, Ojamäe Olesja, B234
+ajalugu.png: Speek Mari, B239
+kunst.png: Norkevitð Aleksandra, B232
+kirjeldus.png: Mihhailova Ljudmilla, B221
+matem.png: Voronova Nadežda, B133
+mattug.png: Voronova Nadežda, B133
+fusika2.png: Voronova Nadežda, B133
+keemia.png: Pesetskaja Svetlana, B144
+esttug2.png: Grupp 1, Peetrimägi Irina, B226
+esttug1.png: Grupp 2, Ojamäe Olesja, B234
+engprog.png: Grupp 1, Voronetskaja Julia A241
